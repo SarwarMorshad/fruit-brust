@@ -23,6 +23,23 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
       rel="stylesheet"
     />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            backgroundImage: {
+              "banner-1": "url('./images/banner1.png')",
+              "banner-2": "url('./images/banner2.png')",
+              "banner-3": "url('./images/banner3.png')",
+              "banner-4": "url('./images/banner4.png')",
+            },
+          },
+        },
+      };
+    </script>
     <style>
       .font-lato {
         font-family: "Lato", sans-serif;
@@ -95,6 +112,133 @@
           </div>
         </div>
       </nav>
+      <section class="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16 mt-5">
+        <div class="carousel w-full rounded-lg">
+          <!-- Carousel-1 -->
+          <div id="slide1" class="carousel-item relative w-full">
+            <!-- Background -->
+            <div class="hero min-h-screen bg-banner-1">
+              <div class="hero-overlay bg-opacity-50 brightness-50"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md font-lato text-white">
+                  <h1 class="mb-5 text-3xl md:text-5xl font-extrabold">
+                    Exotic tastes at your doorstep
+                  </h1>
+                  <p class="mb-5 text-sm md:text-xl">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn border-none outline-none text-white hover:text-red-400 bg-red-400 hover:bg-white transition-all duration-700 ease-in normal-case"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide -->
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+          <!-- Carousel-2 -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <!-- Background -->
+            <div class="hero min-h-screen bg-banner-2">
+              <div class="hero-overlay bg-opacity-50"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md font-lato text-white">
+                  <h1 class="mb-5 text-3xl md:text-5xl font-extrabold">
+                    Exotic tastes at your doorstep
+                  </h1>
+                  <p class="mb-5 text-sm md:text-xl">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn border-none outline-none text-white hover:text-red-400 bg-red-400 hover:bg-white transition-all duration-700 ease-in normal-case"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide -->
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+          <!-- Carousel-3 -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <!-- Background -->
+            <div class="hero min-h-screen bg-banner-3">
+              <div class="hero-overlay bg-opacity-50"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md font-lato text-white">
+                  <h1 class="mb-5 text-3xl md:text-5xl font-extrabold">
+                    Exotic tastes at your doorstep
+                  </h1>
+                  <p class="mb-5 text-sm md:text-xl">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn border-none outline-none text-white hover:text-red-400 bg-red-400 hover:bg-white transition-all duration-700 ease-in normal-case"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide -->
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+          <!-- Carousel-4 -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <!-- Background -->
+            <div class="hero min-h-screen bg-banner-4">
+              <div class="hero-overlay bg-opacity-50"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md font-lato text-white">
+                  <h1 class="mb-5 text-3xl md:text-5xl font-extrabold">
+                    Exotic tastes at your doorstep
+                  </h1>
+                  <p class="mb-5 text-sm md:text-xl">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn border-none outline-none text-white hover:text-red-400 bg-red-400 hover:bg-white transition-all duration-700 ease-in normal-case"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide -->
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
     <main>
       <!-- Banner Section -->
@@ -951,19 +1095,19 @@
       </section>
       <!-- Team Section -->
       <section
-        class="md:container md:mx-auto mt-52 mb-52 text-center bg-[url('/images/team.png')] bg-no-repeat w-full bg-cover h-[690px] pt-56"
+        class="md:container md:mx-auto mt-52 mb-52 text-center bg-[url('/images/team.png')] bg-no-repeat w-full bg-cover lg:h-[690px] pt-52"
       >
         <div class="">
           <div>
-            <h2 class="text-5xl text-white">Meet the team section</h2>
-            <p class="text-white">
+            <h2 class="text-5xl text-white pb-6">Meet the team section</h2>
+            <p class="text-white pb-6">
               Contrary to popular belief, is not simply random text. It has
               roots in a piece of classical Latin literature from 45 BC, making
               it over 2000 years old.
             </p>
 
             <div
-              class="flex flex-col lg:flex-row justify-center items-center gap-32 text-white"
+              class="flex flex-col lg:flex-row justify-center items-center gap-32 text-white pb-4"
             >
               <div>
                 <img src="images/member1.png" alt="" />
@@ -971,17 +1115,11 @@
                 <p>Fruits Expert</p>
                 <a href=""
                   ><i class="fa-brands fa-facebook" style="color: #e80219"></i
-                ></a>
-              </div>
-              <div>
-                <img src="images/member1.png" alt="" />
-                <h4>Awlad Hossain</h4>
-                <p>Fruits Expert</p>
-                <a href=""
-                  ><i class="fa-brands fa-facebook" style="color: #e80219"></i>
+                  >&nbsp;&nbsp;
                   <i class="fa-brands fa-facebook" style="color: #e80219"></i
-                  ><i class="fa-brands fa-facebook" style="color: #e80219"></i
-                ></a>
+                  >&nbsp;&nbsp;
+                  <i class="fa-brands fa-facebook" style="color: #e80219"></i>
+                </a>
               </div>
               <div>
                 <img src="images/member1.png" alt="" />
@@ -989,7 +1127,11 @@
                 <p>Fruits Expert</p>
                 <a href=""
                   ><i class="fa-brands fa-facebook" style="color: #e80219"></i
-                ></a>
+                  >&nbsp;&nbsp;
+                  <i class="fa-brands fa-facebook" style="color: #e80219"></i
+                  >&nbsp;&nbsp;
+                  <i class="fa-brands fa-facebook" style="color: #e80219"></i>
+                </a>
               </div>
               <div>
                 <img src="images/member1.png" alt="" />
@@ -997,7 +1139,23 @@
                 <p>Fruits Expert</p>
                 <a href=""
                   ><i class="fa-brands fa-facebook" style="color: #e80219"></i
-                ></a>
+                  >&nbsp;&nbsp;
+                  <i class="fa-brands fa-facebook" style="color: #e80219"></i
+                  >&nbsp;&nbsp;
+                  <i class="fa-brands fa-facebook" style="color: #e80219"></i>
+                </a>
+              </div>
+              <div>
+                <img src="images/member1.png" alt="" />
+                <h4>Awlad Hossain</h4>
+                <p>Fruits Expert</p>
+                <a href=""
+                  ><i class="fa-brands fa-facebook" style="color: #e80219"></i
+                  >&nbsp;&nbsp;
+                  <i class="fa-brands fa-facebook" style="color: #e80219"></i
+                  >&nbsp;&nbsp;
+                  <i class="fa-brands fa-facebook" style="color: #e80219"></i>
+                </a>
               </div>
             </div>
           </div>
